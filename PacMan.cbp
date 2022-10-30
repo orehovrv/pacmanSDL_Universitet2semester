@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PacMan" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PacMan" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PacMan" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/SDL/SDL-1.2.15/include/SDL" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDLmain -lSDL -lSDL_draw -lSDL_ttf -lSDL.dll" />
+			<Add directory="C:/SDL/SDL-1.2.15/lib" />
+		</Linker>
+		<Unit filename="include/DOT.h" />
+		<Unit filename="include/ENEMY.h" />
+		<Unit filename="include/ENTITY.h" />
+		<Unit filename="include/HERO.h" />
+		<Unit filename="include/LOGICS.h" />
+		<Unit filename="include/MAZE.h" />
+		<Unit filename="include/TEXTURES.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/ENEMY.cpp" />
+		<Unit filename="src/ENTITY.cpp" />
+		<Unit filename="src/HERO.cpp" />
+		<Unit filename="src/LOGICS.cpp" />
+		<Unit filename="src/MAZE.cpp" />
+		<Unit filename="src/TEXTURES.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
